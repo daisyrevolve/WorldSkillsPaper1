@@ -29,7 +29,7 @@ namespace WorldSkillsPaper1.Controllers
                 return Json(user);
 
             }
-            return Json("iser does not exists.");
+            return Json("user does not exists.");
         }
 
         // GET: Users/Details/5
