@@ -130,6 +130,10 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ResourcesController.cs" />
+    <Compile Include="Controllers\Resource_AllocationController.cs" />
+    <Compile Include="Controllers\Resource_TypeController.cs" />
+    <Compile Include="Controllers\SkillsController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Controllers\User_TypeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -236,6 +240,26 @@
     <Content Include="Views\User_Type\Details.cshtml" />
     <Content Include="Views\User_Type\Edit.cshtml" />
     <Content Include="Views\User_Type\Index.cshtml" />
+    <Content Include="Views\Resources\Create.cshtml" />
+    <Content Include="Views\Resources\Delete.cshtml" />
+    <Content Include="Views\Resources\Details.cshtml" />
+    <Content Include="Views\Resources\Edit.cshtml" />
+    <Content Include="Views\Resources\Index.cshtml" />
+    <Content Include="Views\Skills\Create.cshtml" />
+    <Content Include="Views\Skills\Delete.cshtml" />
+    <Content Include="Views\Skills\Details.cshtml" />
+    <Content Include="Views\Skills\Edit.cshtml" />
+    <Content Include="Views\Skills\Index.cshtml" />
+    <Content Include="Views\Resource_Allocation\Create.cshtml" />
+    <Content Include="Views\Resource_Allocation\Delete.cshtml" />
+    <Content Include="Views\Resource_Allocation\Details.cshtml" />
+    <Content Include="Views\Resource_Allocation\Edit.cshtml" />
+    <Content Include="Views\Resource_Allocation\Index.cshtml" />
+    <Content Include="Views\Resource_Type\Create.cshtml" />
+    <Content Include="Views\Resource_Type\Delete.cshtml" />
+    <Content Include="Views\Resource_Type\Details.cshtml" />
+    <Content Include="Views\Resource_Type\Edit.cshtml" />
+    <Content Include="Views\Resource_Type\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

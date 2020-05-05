@@ -1,0 +1,26 @@
+﻿@model WorldSkillsPaper1.Resource_Type
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Resource_Type</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.resTypeName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.resTypeName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.resTypeId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

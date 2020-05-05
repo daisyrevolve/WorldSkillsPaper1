@@ -1,0 +1,42 @@
+﻿@model WorldSkillsPaper1.Resource
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Resource</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.resName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.resName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.remainingQuantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.remainingQuantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Resource_Type.resTypeName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Resource_Type.resTypeName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.resId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

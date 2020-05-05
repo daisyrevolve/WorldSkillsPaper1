@@ -1,0 +1,39 @@
+﻿@model IEnumerable<WorldSkillsPaper1.Resource_Allocation>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Resource.resName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Skill.skillName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Resource.resName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Skill.skillName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.allocId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.allocId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.allocId })
+        </td>
+    </tr>
+}
+
+</table>
